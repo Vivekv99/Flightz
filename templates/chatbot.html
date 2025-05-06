@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple ChatBot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      padding: 2rem;
+    }
+
+    .chatbot-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .faq {
+      margin-bottom: 1rem;
+    }
+
+    .faq button {
+      width: 100%;
+      text-align: left;
+      background-color: #3B82F6;
+      color: white;
+      padding: 0.75rem 1rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .faq button:hover {
+      background-color: #2563eb;
+    }
+
+    .answer {
+      display: none;
+      padding: 0.75rem 1rem;
+      background-color: #e0f2fe;
+      border-left: 4px solid #3B82F6;
+      margin-top: 0.5rem;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="chatbot-container">
+    <h2 style="text-align:center; margin-bottom: 1.5rem;">ChatBot - FAQs</h2>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">How do I book a flight?</button>
+      <div class="answer">Click the 'Search Flights' button after entering details, then click 'Book'.</div>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">Can I cancel my booking?</button>
+      <div class="answer">Yes, bookings can be canceled within 24 hours for a full refund.</div>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">Do I need an account to search flights?</button>
+      <div class="answer">No, you can search flights without logging in. Booking requires login.</div>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">What payment methods are accepted?</button>
+      <div class="answer">We accept UPI, credit/debit cards, and net banking.</div>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">Will I receive an email confirmation?</button>
+      <div class="answer">Yes, confirmation is sent to your registered email after booking.</div>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">Are there discounts for students?</button>
+      <div class="answer">Yes, students get 10% off with a valid ID at checkout.</div>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">How can I change my travel date?</button>
+      <div class="answer">Use the 'Manage Booking' section after logging in to reschedule.</div>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">What if my flight is delayed?</button>
+      <div class="answer">You will be notified via SMS and email about delays or changes.</div>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">Can I choose my seat?</button>
+      <div class="answer">Yes, seat selection is available during the booking process.</div>
+    </div>
+
+    <div class="faq">
+      <button onclick="toggleAnswer(this)">Is my data secure?</button>
+      <div class="answer">Yes, we use industry-standard encryption for all transactions.</div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAnswer(button) {
+      const answer = button.nextElementSibling;
+      answer.style.display = (answer.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

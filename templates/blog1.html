@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top 5 Tips to Book Cheap Flights</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}" />
+  <link rel="stylesheet" href="/static/css/blog1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="home-bg">
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-plane-departure"></i>
+      <span>FlightFinder</span>
+    </div>
+    <div class="nav-buttons">
+      <a href="/home" class="nav-button">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <button class="nav-button" id="darkModeToggle">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="nav-button sign-out" onclick="logout()">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Sign Out</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="blog-container">
+    <h1 class="blog-main-title">Top 5 Tips to Book Cheap Flights</h1>
+    <p class="blog-subtitle">Find out how to save big on airfare with these expert tips.</p>
+
+    <img src="{{ url_for('static', filename='images/blog1-cover.jpg') }}" alt="Cheap Flights" class="blog-cover"/>
+
+    <section class="blog-content">
+      <h2>1. Be Flexible With Your Travel Dates</h2>
+      <p>
+        Flexibility is the golden rule when booking cheap flights. If you can shift your travel dates by just a few days, you might save thousands of rupees. Flying mid-week is often cheaper than weekends.
+      </p>
+      <img src="{{ url_for('static', filename='images/flexibility.jpg') }}" alt="Flexible Dates" class="blog-inline-img"/>
+
+      <h2>2. Use Incognito Mode While Searching</h2>
+      <p>
+        Ever noticed prices increasing after a few searches? Travel websites track your visits using cookies. Always use incognito or private browsing mode to get the best prices.
+      </p>
+
+      <h2>3. Set Fare Alerts</h2>
+      <p>
+        Use flight comparison tools to set fare alerts. These alerts notify you when prices drop for your desired route. This saves time and ensures you book at the best price.
+      </p>
+      <img src="{{ url_for('static', filename='images/fare-alerts.jpg') }}" alt="Fare Alerts" class="blog-inline-img"/>
+
+      <h2>4. Consider Budget Airlines</h2>
+      <p>
+        Budget carriers often offer better deals, especially for domestic routes. Just ensure you’re aware of their baggage policies and other fees before booking.
+      </p>
+
+      <h2>5. Book in Advance (But Not Too Early)</h2>
+      <p>
+        While booking early can secure low fares, booking too early may lead to missing out on discounts. The sweet spot is usually 1–3 months in advance for domestic and 2–5 months for international travel.
+      </p>
+      <img src="{{ url_for('static', filename='images/booking-window.jpg') }}" alt="Best Booking Time" class="blog-inline-img"/>
+
+      <h2>Bonus Tip: Use Flight Comparison Websites</h2>
+      <p>
+        Platforms like FlightFinder (yes, us!) scan hundreds of websites and airlines in seconds. We help you find the best prices, fastest routes, and more. Why search manually when you can compare easily?
+      </p>
+    </section>
+
+    <section class="blog-author-box">
+      <h3>About the Author</h3>
+      <p>
+        Vivek Visave is a frequent flyer and travel blogger with 8+ years of experience in the airline industry. She loves uncovering travel hacks to help people save money and travel smarter.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 FlightFinder. All rights reserved.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
