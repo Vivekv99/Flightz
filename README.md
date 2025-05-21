@@ -1,40 +1,35 @@
-Flightz
+
+FLIGHTZ ✈️
 
 Flightz is a flight booking web application designed to provide users with a seamless experience in searching, viewing, and managing flight information. Built using Python, HTML, CSS, and JavaScript, Flightz offers a user-friendly interface and efficient backend processing.
 
 🚀 Features
 
-Flight Search: Easily search for flights based on departure and arrival cities.
+1)Flight Search: Easily search for flights based on departure and arrival cities.
 
-Flight Details: View detailed information about each flight, including airline, departure and arrival times, and prices.
+2)Flight Details: View detailed information about each flight, including airline, departure and arrival times, and prices.
 
-Booking Management: Manage your bookings with options to add, update, or delete flight entries.
+3)Booking Management: Manage your bookings with options to add, update, or delete flight entries.
 
-Responsive Design: Optimized for both desktop and mobile devices.
+4)Responsive Design: Optimized for both desktop and mobile devices.
 
-Data Storage: Utilizes SQLite for efficient data storage and retrieval.
+5)Data Storage: Utilizes SQLite for efficient data storage and retrieval.
 
 
 🛠️ Technologies Used
 
 Frontend:
-
 HTML
-
 CSS
-
 JavaScript
 
 
 Backend:
-
 Python
-
 Flask
 
 
 Database:
-
 SQLite
 
 
